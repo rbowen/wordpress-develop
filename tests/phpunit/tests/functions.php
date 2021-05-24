@@ -168,7 +168,7 @@ class Tests_Functions extends WP_UnitTestCase {
 		$testdir = DIR_TESTDATA . '/images/';
 
 		// Sanity check.
-		$this->assertSame( 'abcdefg.png', wp_unique_filename( $testdir, 'abcdefg.png' ), 'Sanitiy check failed' );
+		$this->assertSame( 'abcdefg.png', wp_unique_filename( $testdir, 'abcdefg.png' ), 'Sanity check failed' );
 
 		// Check number is appended for file already exists.
 		$this->assertFileExists( $testdir . 'test-image.png', 'Test image does not exist' );
